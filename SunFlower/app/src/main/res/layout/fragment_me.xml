@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:my="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.MeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/h_back"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"/>
+
+            <ImageView
+                android:id="@+id/h_head"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/h_back"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="张三"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="0dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+<!--            my:icon="@mipmap/product_part2_icon"-->
+            <com.bignerdranch.android.sunflower.widget.nav_bar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/course"
+                my:hint="我的课表"
+                my:icon="@drawable/calendar_check"
+                android:background="@drawable/selector"/>
+
+<!--            <com.bignerdranch.android.sunflower.widget.nav_bar-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/shoucang"-->
+<!--                my:hint="收藏"-->
+<!--                android:background="@drawable/selector"/>-->
+
+<!--            <com.bignerdranch.android.sunflower.widget.nav_bar-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/version"-->
+<!--                my:hint="版本更新"-->
+<!--                android:background="@drawable/selector"/>-->
+
+            <com.bignerdranch.android.sunflower.widget.nav_bar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/about"
+                my:hint="关于"
+                my:icon="@drawable/crown"
+                android:background="@drawable/selector"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

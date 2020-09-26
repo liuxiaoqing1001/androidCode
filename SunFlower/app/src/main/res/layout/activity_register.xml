@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--背景图片-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/sunflower1"
+        android:scaleType="fitXY"/>
+
+    <!--添加虚化层-->
+    <io.alterac.blurkit.BlurLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:blk_fps="0"
+        app:blk_blurRadius="25"/>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/bg"
+        android:layout_marginTop="-50dp">
+
+        <!--标题-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SunFlower"
+            android:textColor="#FF8247"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+    </RelativeLayout>
+
+    <!--输入框背景-->
+    <io.alterac.blurkit.BlurLayout
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/input_bg_shape"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:blk_fps="0"
+        app:blk_blurRadius="20"/>
+
+
+    <!--添加标题和输入框视图-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+
+        <!--标题-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="注 册"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:textAlignment="center"/>
+
+        <!--添加输入框-->
+        <EditText
+            android:id="@+id/et_regist_user"
+            style="@style/EditTextStyle"
+            android:inputType="text"
+            android:hint="请输入用户名"/>
+
+        <EditText
+            android:id="@+id/et_regist_password"
+            style="@style/EditTextStyle"
+            android:inputType="textPassword"
+            android:hint="请输入密码"/>
+
+        <EditText
+            android:id="@+id/et_regist_repassword"
+            style="@style/EditTextStyle"
+            android:inputType="textPassword"
+            android:hint="请再次输入密码"/>
+
+        <!--添加按钮-->
+        <Button
+            android:id="@+id/bt_regist"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="确     定"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:layout_marginTop="20dp"
+            android:enabled="false"
+            android:background="@drawable/login_btn_selector"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="50dp"
+            android:gravity="right"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/text_tologin"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:text="已有帐号？去登录>>"
+                android:textColor="@color/colorBlue"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

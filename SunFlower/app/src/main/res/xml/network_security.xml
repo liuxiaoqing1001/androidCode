@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network_security_config>
+<!--    OkHttp在请求网络链接的时候直接onFailure-->
+<!--    原因：Android P(API 28)以上版本全面禁止了非https链接-->
+<!--    并严格审查网站的CA证书-->
+<!--    解决：在res文件夹下新建目录xml-->
+<!--    然后创建文件network_security.xml(这个名字可以自定义，旨在开启http请求)-->
+<!--    然后在AndroidManifest.xml文件的Application标签添加属性：-->
+<!--    android:networkSecurityConfig="@xml/network_security"-->
+<!--    （但会报错误“Failed to parse XML configuration from network_security”，我就直接在http后面加了s，成功）-->
+    <base-config cleartextTrafficPermitted="true" />
+</network_security_config>

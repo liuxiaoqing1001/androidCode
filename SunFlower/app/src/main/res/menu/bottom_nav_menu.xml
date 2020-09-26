@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_recommend"
+        android:icon="@drawable/appstore"
+        android:title="@string/title_recommend" />
+
+    <item
+        android:id="@+id/navigation_see"
+        android:icon="@drawable/fire"
+        android:title="@string/title_see" />
+
+    <item
+        android:id="@+id/navigation_listen"
+        android:icon="@drawable/customerservice"
+        android:title="@string/title_listen" />
+
+    <item
+        android:id="@+id/navigation_me"
+        android:icon="@drawable/user"
+        android:title="@string/title_me" />
+
+</menu>

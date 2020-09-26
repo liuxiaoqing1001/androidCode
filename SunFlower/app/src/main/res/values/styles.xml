@@ -1,0 +1,66 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Button_Skip">
+        <item name="android:background">@drawable/button_beat</item>
+    </style>
+
+    <style name="Button_rec">
+        <item name="android:background">@drawable/button_beat_rec</item>
+    </style>
+
+    <!--app中的标题：字体 字号 颜色 -->
+    <!--共同拥有的东西-->
+    <style name="EditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/editview_shape</item>
+        <item name="android:layout_marginTop">20dp</item>
+<!--        <item name="android:drawableLeft">@drawable/iconfont_user</item>-->
+        <item name="android:paddingLeft">7dp</item>
+        <item name="android:drawablePadding">7dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="TitleBarText" parent="AppTheme">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">0.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="courseTableText">
+        <item name="android:textColor">#4b3b85</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">2dp</item>
+    </style>
+    <style name="SubHeadTextGray" parent="AppTheme">
+        <item name="android:textColor">#ada9aa</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="PageHeaderShadow" parent="AppTheme">
+        <item name="android:background">@drawable/bg_header_shadow</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+    </style>
+    <style name="basicText">
+        <item name="android:text">我的日程</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+
+</resources>

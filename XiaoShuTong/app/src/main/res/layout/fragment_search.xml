@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/top1">
+
+<!--    android:background="@drawable/bg"-->
+
+    <TextView
+        android:id="@+id/tv_sv"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="144dp"
+        android:padding="4dp"
+        android:text="请输入查询题目"
+        android:textSize="18dp"
+        android:textColor="@color/gray"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/search1"
+        android:background="@color/white"/>
+
+</LinearLayout>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:id="@+id/clBackground"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="@android:color/black"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    <com.bignerdranch.android.soulplanet.view.SoulPlanetsView-->
+<!--        android:id="@+id/soulPlanetView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        app:autoScrollMode="decelerate"-->
+<!--        app:darkColor="#ff0000"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:lightColor="#00ff00"-->
+<!--        app:radiusPercent="0.75"-->
+<!--        app:scrollSpeed="20" />-->
+
+<!--    <include-->
+<!--        layout="@layout/fragment_soul"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
+
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+

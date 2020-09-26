@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_near">
+    <fragment
+        android:id="@+id/navigation_near"
+        android:name="com.bignerdranch.android.mulan.ui.NearFragment"
+        android:label="@string/title_near"
+        tools:layout="@layout/fragment_near" />
+    <fragment
+        android:id="@+id/navigation_see"
+        android:name="com.bignerdranch.android.mulan.ui.SeeFragment"
+        android:label="@string/title_see"
+        tools:layout="@layout/fragment_see" />
+    <fragment
+        android:id="@+id/navigation_say"
+        android:name="com.bignerdranch.android.mulan.ui.SayFragment"
+        android:label="@string/title_say"
+        tools:layout="@layout/fragment_say" />
+    <fragment
+        android:id="@+id/navigation_me"
+        android:name="com.bignerdranch.android.mulan.ui.MeFragment"
+        android:label="@string/title_me"
+        tools:layout="@layout/fragment_me" />
+</navigation>

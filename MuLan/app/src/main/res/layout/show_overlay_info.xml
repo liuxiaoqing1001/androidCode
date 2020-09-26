@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/nav_overlay"
+        android:background="@color/colorOrange"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/overlay_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/colorWhite"
+            android:text="name"
+            android:textSize="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:id="@+id/overlay_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="address"
+                android:textSize="12dp"/>
+
+<!--            <ImageView-->
+<!--                android:id="@+id/overlay_detail"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/right"/>-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/overlay_phoneNum"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="phoneNum"-->
+    <!--            android:textSize="15dp"/>-->
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/overlay_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="20dp"
+            android:gravity="right"
+            android:textColor="@color/colorBlue"
+            android:text="查看详情>>"
+            android:textSize="13dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

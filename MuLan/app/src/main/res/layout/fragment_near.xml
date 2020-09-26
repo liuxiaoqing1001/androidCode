@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.NearFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorNo">
+
+<!--            <EditText -->
+<!--                android:id="@+id/et_city"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:background="#ffffff"-->
+<!--                android:textSize="22dp"-->
+<!--                android:hint="输入城市"-->
+<!--                android:layout_weight="15" />-->
+            <AutoCompleteTextView
+                android:id="@+id/et_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:background="#ffffff"
+                android:textSize="22dp"
+                android:hint="输入城市"
+                android:layout_weight="15"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/et_keyword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:background="#ffffff"
+                android:textSize="22dp"
+                android:hint="输入关键词"
+                android:layout_weight="25"/>
+
+<!--            <EditText-->
+<!--                android:id="@+id/et_keyword"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:background="#ffffff"-->
+<!--                android:textSize="22dp"-->
+<!--                android:hint="输入关键词"-->
+<!--                android:layout_weight="25" />-->
+
+            <Button
+                android:id="@+id/query_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/colorWhite"
+                android:textColor="@color/colorOrange"
+                android:textSize="20dp"
+                android:text="搜索" />
+
+        </LinearLayout>
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_gravity="top|left"
+        android:orientation="vertical">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_scenic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:fabSize="normal"
+            android:scaleType="center"
+            app:backgroundTint="@color/colorWhite"
+            android:src="@drawable/scenic"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_gravity="bottom|left"
+        android:orientation="vertical">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            app:fabSize="normal"
+            android:scaleType="center"
+            app:backgroundTint="@color/colorWhite"
+            android:src="@drawable/overlay"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_gravity="top|right"
+        android:orientation="vertical">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_restaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:fabSize="normal"
+            android:scaleType="center"
+            app:backgroundTint="@color/colorWhite"
+            android:src="@drawable/restaurant"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_hotel"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_marginTop="8dp"
+            app:fabSize="normal"
+            android:scaleType="center"
+            app:backgroundTint="@color/colorWhite"
+            android:src="@drawable/hotel" />
+
+    </LinearLayout>
+
+
+<!--        <ListView-->
+<!--            android:layout_weight="3"-->
+<!--            android:id="@+id/nearby"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"/>-->
+
+<!--    </LinearLayout>-->
+
+<!--    <com.baidu.mapapi.map.MapView-->
+<!--        android:id="@+id/bmapView"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="fill_parent"-->
+<!--        android:clickable="true" />-->
+
+</FrameLayout>

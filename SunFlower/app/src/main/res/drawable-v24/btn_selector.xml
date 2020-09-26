@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--正常状态 蓝色背景 圆角矩形-->
+    <item >
+        <shape android:shape="rectangle">
+            <corners android:radius="20dp"/>
+            <solid android:color="@color/colorOrange"/>
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_recommend">
+
+    <fragment
+        android:id="@+id/navigation_recommend"
+        android:name="com.bignerdranch.android.sunflower.ui.RecommendFragment"
+        android:label="@string/title_recommend"
+        tools:layout="@layout/fragment_recommend" />
+
+    <fragment
+        android:id="@+id/navigation_see"
+        android:name="com.bignerdranch.android.sunflower.ui.SeeFragment"
+        android:label="@string/title_see"
+        tools:layout="@layout/fragment_see" />
+
+    <fragment
+        android:id="@+id/navigation_listen"
+        android:name="com.bignerdranch.android.sunflower.ui.ListenFragment"
+        android:label="@string/title_listen"
+        tools:layout="@layout/fragment_listen" />
+
+    <fragment
+        android:id="@+id/navigation_me"
+        android:name="com.bignerdranch.android.sunflower.ui.MeFragment"
+        android:label="@string/title_me"
+        tools:layout="@layout/fragment_me" />
+</navigation>

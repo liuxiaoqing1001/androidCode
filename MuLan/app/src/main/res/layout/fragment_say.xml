@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:my="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.SayFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorOrange">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:text="那些地方，那些事儿"
+                    android:textSize="20dp"
+                    android:layout_weight="1"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <com.bignerdranch.android.mulan.widget.say_bar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/p1"
+                    my:hint="礼赞新中国成立70周年|我们的西安城墙"
+                    my:icon="@drawable/p1"
+                    android:background="@drawable/selector"/>
+
+                <com.bignerdranch.android.mulan.widget.say_bar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/p2"
+                    my:hint="故宫新展！！！\n品味不同文化间和谐的艺术之美"
+                    my:icon="@drawable/p2"
+                    android:background="@drawable/selector"/>
+
+                <com.bignerdranch.android.mulan.widget.say_bar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/p3"
+                    my:hint="踏着夕阳的余晖\n漫步蓬莱阁的亭台楼阁间\n享受一份恬静，感受一份温暖，感怀一种意境"
+                    my:icon="@drawable/p3"
+                    android:background="@drawable/selector"/>
+
+                <com.bignerdranch.android.mulan.widget.say_bar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/p4"
+                    my:hint="春日的云冈\n时至暮春芳菲\n一抹优雅粉，浪漫妩媚"
+                    my:icon="@drawable/p4"
+                    android:background="@drawable/selector"/>
+
+                <com.bignerdranch.android.mulan.widget.say_bar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/p5"
+                    my:hint="古重庆城门之一，重庆市渝中区解放碑沧白路，地处长江、嘉陵江两江交汇的滨江地带，是兼具观光旅游、休闲度假等功能的旅游区"
+                    my:icon="@drawable/p5"
+                    android:background="@drawable/selector"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</FrameLayout>
+
+
+<!--<ScrollView-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent">-->
+
+<!--<LinearLayout-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical">-->
+
+<!--    <androidx.coordinatorlayout.widget.CoordinatorLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        &lt;!&ndash;第一部分：伸缩工具栏&ndash;&gt;-->
+<!--        <com.google.android.material.appbar.AppBarLayout-->
+<!--            android:id="@+id/app_top_bar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/colorWhite"-->
+<!--            app:elevation="0dp">-->
+
+<!--            <com.google.android.material.appbar.CollapsingToolbarLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="200dp"-->
+<!--                android:id="@+id/top_picture"-->
+<!--                app:layout_scrollFlags="scroll|exitUntilCollapsed"-->
+<!--                app:titleEnabled="false">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:id="@+id/weather_bg"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@drawable/bg6">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginLeft="20dp"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:layout_marginBottom="10dp"-->
+<!--                            android:textSize="22dp"-->
+<!--                            android:textColor="@color/colorWhite"-->
+<!--                            android:text="MuLan"/>-->
+
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:gravity="center">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:id="@+id/weather"-->
+<!--                            android:gravity="center"-->
+<!--                            android:textSize="30dp"-->
+<!--                            android:text="多云\n37"/>-->
+
+<!--                    </LinearLayout>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </com.google.android.material.appbar.CollapsingToolbarLayout>-->
+
+<!--            <com.google.android.material.appbar.CollapsingToolbarLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/top_picture"-->
+<!--                app:layout_scrollFlags="scroll|exitUntilCollapsed">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:layout_marginTop="5dp">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:gravity="center"-->
+<!--                        style="@style/Button_rec">-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/rec_hotel"-->
+<!--                            android:layout_width="50dp"-->
+<!--                            android:layout_height="50dp" />-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/rec_ticket"-->
+<!--                            android:layout_width="50dp"-->
+<!--                            android:layout_height="50dp"-->
+<!--                            android:layout_marginLeft="55dp" />-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/rec_say"-->
+<!--                            android:layout_width="50dp"-->
+<!--                            android:layout_height="50dp"-->
+<!--                            android:layout_marginLeft="55dp" />-->
+
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="25dp"-->
+<!--                        android:gravity="center"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        style="@style/Button_rec">-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/rec_hotel1"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="酒店住宿"-->
+<!--                            android:textColor="@color/colorBlack"-->
+<!--                            android:textSize="18dp"/>-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/rec_ticket1"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginLeft="26dp"-->
+<!--                            android:text="机票/火车票"-->
+<!--                            android:textColor="@color/colorBlack"-->
+<!--                            android:textSize="18dp"/>-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/rec_say1"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginLeft="26dp"-->
+<!--                            android:text="说说吧"-->
+<!--                            android:textColor="@color/colorBlack"-->
+<!--                            android:textSize="18dp"/>-->
+
+<!--                    </LinearLayout>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </com.google.android.material.appbar.CollapsingToolbarLayout>-->
+
+<!--        </com.google.android.material.appbar.AppBarLayout>-->
+
+<!--    </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="\n热门推荐\n"-->
+<!--            android:textSize="15dp"-->
+<!--            android:textColor="@color/colorOrange"/>-->
+
+<!--        &lt;!&ndash;                    <ImageButton&ndash;&gt;-->
+<!--        &lt;!&ndash;                        android:id="@+id/bt_acr1"&ndash;&gt;-->
+<!--        &lt;!&ndash;                        android:layout_width="350dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;                        android:layout_height="120dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;                        android:layout_marginTop="5dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;                        android:background="@drawable/bg5"/>&ndash;&gt;-->
+
+<!--        &lt;!&ndash;                    <ImageButton&ndash;&gt;-->
+<!--        &lt;!&ndash;                        android:id="@+id/bt_acr2"&ndash;&gt;-->
+<!--        &lt;!&ndash;                        android:layout_width="350dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;                        android:layout_height="120dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;                        android:layout_marginTop="15dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;                        android:background="@drawable/bg2"/>&ndash;&gt;-->
+
+<!--        &lt;!&ndash;                    <ImageButton&ndash;&gt;-->
+<!--        &lt;!&ndash;                        android:id="@+id/bt_acr3"&ndash;&gt;-->
+<!--        &lt;!&ndash;                        android:layout_width="350dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;                        android:layout_height="120dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;                        android:layout_marginTop="15dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;                        android:layout_marginBottom="15dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;                        android:background="@drawable/bg4"/>&ndash;&gt;-->
+
+<!--        &lt;!&ndash;                </LinearLayout>&ndash;&gt;-->
+
+<!--    </LinearLayout>-->
+
+<!--</LinearLayout>-->
+
+<!--</ScrollView>-->

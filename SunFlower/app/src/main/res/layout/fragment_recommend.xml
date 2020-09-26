@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RecommendFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="65dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--第一部分：伸缩工具栏-->
+                <com.google.android.material.appbar.AppBarLayout
+                    android:id="@+id/app_top_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    app:elevation="0dp">
+
+                    <com.google.android.material.appbar.CollapsingToolbarLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/top_picture"
+                        android:background="@color/colorOrange"
+                        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                        app:titleEnabled="false">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            android:gravity="center"
+                            style="@style/Button_rec">
+
+                            <!--                    <androidx.recyclerview.widget.RecyclerView-->
+                            <!--                        android:id="@+id/recyclerview_head"-->
+                            <!--                        android:layout_width="350dp"-->
+                            <!--                        android:layout_height="210dp">-->
+
+                            <!--                    </androidx.recyclerview.widget.RecyclerView>-->
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="350dp"
+                                    android:layout_height="210dp"
+                                    android:background="@drawable/app"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+                    <com.google.android.material.appbar.CollapsingToolbarLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/top_picture"
+                        app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginTop="5dp"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                style="@style/Button_rec">
+
+                                <ImageView
+                                    android:id="@+id/rec_lib"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp" />
+
+                                <ImageView
+                                    android:id="@+id/rec_listen"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:layout_marginLeft="40dp" />
+
+                                <ImageView
+                                    android:id="@+id/rec_requre"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:layout_marginLeft="40dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp"
+                                style="@style/Button_rec">
+
+                                <TextView
+                                    android:id="@+id/rec_lib1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="词库"
+                                    android:textColor="@color/colorOrange"
+                                    android:textSize="18dp"/>
+
+                                <TextView
+                                    android:id="@+id/rec_listen1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="55dp"
+                                    android:text="背单词"
+                                    android:textColor="@color/colorOrange"
+                                    android:textSize="18dp"/>
+
+                                <TextView
+                                    android:id="@+id/rec_requre1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="55dp"
+                                    android:text="查询"
+                                    android:textColor="@color/colorOrange"
+                                    android:textSize="18dp"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+                </com.google.android.material.appbar.AppBarLayout>
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    style="@style/Button_rec">
+
+                    <!--第二部分：主要内容-->
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    style="@style/Button_rec"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="\n热门活动\n"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorOrange"/>
+
+                    <ImageButton
+                        android:id="@+id/bt_acr3"
+                        android:layout_width="350dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/activity3"/>
+
+<!--                    <ImageButton-->
+<!--                        android:id="@+id/bt_acr2"-->
+<!--                        android:layout_width="350dp"-->
+<!--                        android:layout_height="90dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:background="@drawable/activity1"/>-->
+
+                    <ImageButton
+                        android:id="@+id/bt_acr4"
+                        android:layout_width="350dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/activity4"/>
+
+                    <ImageButton
+                        android:id="@+id/bt_acr2"
+                        android:layout_width="350dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/activity2"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</FrameLayout>
